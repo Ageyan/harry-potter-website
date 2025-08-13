@@ -1,0 +1,29 @@
+.all-char-section__pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 8px;
+
+    @media screen and (min-width: $bp-tablet) {
+        display: none;
+    }
+    
+    @media screen and (min-width: $bp-desktop) {
+        display: none;
+    }
+
+    & button {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: none;
+        background: #ccc;
+        cursor: pointer;
+        padding: 0;
+        transition: background 0.3s;
+    }
+
+    & button.active {
+        background: var(--color-secondary);
+    }
+}
